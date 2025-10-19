@@ -26,7 +26,7 @@ class GeneratedSummary(BaseModel):
 
 # create mongo client (reads MONGODB_URI from env; fallback to localhost)
 MONGODB_URI = os.getenv("MONGODB_URI", "mongodb://localhost:27017")
-print(f"Using MongoDB URI: {MONGODB_URI}")
+
 # --- API Endpoints ---
 
 @app.route('/search', methods=['POST'])
