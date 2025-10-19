@@ -84,7 +84,7 @@ const Index = () => {
       />
       {/* Hero Section with Background */}
       <div className="relative min-h-[70vh] flex flex-col items-center justify-center px-4">
-        
+
         <div className="relative w-full max-w-4xl space-y-8 animate-fade-in">
           <div className="text-center space-y-4">
             <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
@@ -100,7 +100,7 @@ const Index = () => {
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground z-10 pointer-events-none" />
               <Input
                 type="text"
-                placeholder="e.g., Effects of spaceflight on the human body"
+                placeholder="Enter a space biology research query..."
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 onKeyPress={handleKeyPress}
@@ -117,7 +117,7 @@ const Index = () => {
               {isLoading ? 'Searching...' : 'Search'}
             </Button>
           </div>
-           {error && <p className="text-center text-destructive">{error}</p>}
+          {error && <p className="text-center text-destructive">{error}</p>}
 
 
           <div className="flex items-center justify-center gap-6 text-sm text-muted-foreground">
@@ -143,14 +143,14 @@ const Index = () => {
           <Card className="bg-card/50 backdrop-blur-lg border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-xl group">
             <CardHeader className="space-y-4">
               <div className="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center overflow-hidden group-hover:scale-110 transition-transform duration-300">
-                <BookOpenText size={"38px"}/>
+                <BookOpenText size={"38px"} />
               </div>
               <CardTitle className="text-2xl font-semibold">Why This Project?</CardTitle>
             </CardHeader>
             <CardContent>
               <CardDescription className="text-base leading-relaxed text-muted-foreground/90">
-                Bridging the gap between researchers and knowledge. We've built an intelligent platform 
-                that makes navigating vast academic databases intuitive and efficient, empowering 
+                Bridging the gap between researchers and knowledge. We've built an intelligent platform
+                that makes navigating vast academic databases intuitive and efficient, empowering
                 scholars, students, and professionals to accelerate their research journey.
               </CardDescription>
             </CardContent>
@@ -159,14 +159,14 @@ const Index = () => {
           <Card className="bg-card/50 backdrop-blur-lg border-border/50 hover:border-primary/50 transition-all duration-300 hover:shadow-xl group">
             <CardHeader className="space-y-4">
               <div className="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center overflow-hidden group-hover:scale-110 transition-transform duration-300">
-                <FileText size={"38px"}/>
+                <FileText size={"38px"} />
               </div>
               <CardTitle className="text-2xl font-semibold">How To Use</CardTitle>
             </CardHeader>
             <CardContent>
               <CardDescription className="text-base leading-relaxed text-muted-foreground/90">
-                Enter your research query using natural language or keywords. Our advanced algorithms 
-                analyze millions of academic papers instantly, delivering relevant results with 
+                Enter your research query using natural language or keywords. Our advanced algorithms
+                analyze millions of academic papers instantly, delivering relevant results with
                 citation metrics, abstracts, and full-text access when available.
               </CardDescription>
             </CardContent>
@@ -184,9 +184,9 @@ const Index = () => {
                 See the platform in action:
               </CardDescription>
               <div className="aspect-video bg-muted/50 rounded-xl overflow-hidden border border-border/50 shadow-inner">
-                <img 
-                  src={demoPreview} 
-                  alt="Platform demonstration" 
+                <img
+                  src={demoPreview}
+                  alt="Platform demonstration"
                   className="w-full h-full object-cover"
                 />
               </div>
