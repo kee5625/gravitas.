@@ -43,7 +43,7 @@ const KnowledgeGraph = () => {
       try {
         // The summary call is now a POST request sending both the query and the current publication's ID.
         const [summaryRes, kgNodeRes] = await Promise.all([
-          fetch(`http://127.0.0.1:5000/summary`, {
+          fetch(`https://gravitas-nine.vercel.app/summary`, {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -51,7 +51,7 @@ const KnowledgeGraph = () => {
               id: currentPublication.pmc_id
             }),
           }),
-          fetch(`http://127.0.0.1:5000/kg_node/${currentPublication.pmc_id}`)
+          fetch(`https://gravitas-nine.vercel.app/kg_node/${currentPublication.pmc_id}`)
         ]);
         console.log(summaryRes);
         console.log(kgNodeRes);
