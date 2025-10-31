@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { useNavigate } from "react-router-dom";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import nebulaBg from "@/assets/carinanebula3-bg.jpg";
-import demoPreview from "@/assets/demo-preview.jpg";
+import demoPreview from "@/assets/demo-preview.png";
 import type { APIResponse, Publication } from "@/types";
 
 const Index = () => {
